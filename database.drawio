@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-07T04:22:49.715Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="JlbY_QSy7TnQzCda-mLE" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-07T04:29:40.720Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="ySJ4kamLRbeofCRHJPRm" version="20.0.4" type="github">
   <diagram id="7xLGgyJst3br1a6myuJQ" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,8 +35,8 @@
             <mxGeometry x="135" y="190" width="120" height="60" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="m5TrZh2OxMoqaNhlM3Lx-11" value="begin;&lt;br&gt;update order where&amp;nbsp;&amp;nbsp;&lt;br&gt;commit;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="300" y="110" width="380" height="50" as="geometry" />
+        <mxCell id="m5TrZh2OxMoqaNhlM3Lx-11" value="begin;&lt;br&gt;update order_list set status=3 where province in (&#39;001&#39;,&#39;002&#39;,&#39;003&#39;)&amp;nbsp;&lt;br&gt;commit;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="50" width="380" height="50" as="geometry" />
         </mxCell>
         <mxCell id="m5TrZh2OxMoqaNhlM3Lx-12" value="&lt;b&gt;&lt;font color=&quot;#66b2ff&quot;&gt;Master&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="350" width="40" height="20" as="geometry" />
@@ -79,6 +79,9 @@
         </mxCell>
         <mxCell id="m5TrZh2OxMoqaNhlM3Lx-24" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=8;fontColor=#66B2FF;" vertex="1" parent="1">
           <mxGeometry x="214" y="153" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="m5TrZh2OxMoqaNhlM3Lx-25" value="&lt;h1&gt;MySQL环境&lt;/h1&gt;&lt;p&gt;MHA/Keepalived提供高可用vip服务&lt;/p&gt;&lt;p&gt;底层MySQL通过(半同步+after sync semi-replication)搭建副本&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=8;fontColor=#66B2FF;" vertex="1" parent="1">
+          <mxGeometry x="450" y="240" width="190" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
