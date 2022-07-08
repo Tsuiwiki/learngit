@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-08T05:55:10.799Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="OzQG6bc3aP4HY2zq52es" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-08T15:43:57.399Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="87jfapYqNN2MsUr2MS1x" version="20.0.4" type="github">
   <diagram id="ObCENUlUA4ZSgpgrxgMP" name="Page-1">
-    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1383" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -833,35 +833,90 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-205" value="客户端发出COMMIT或者自动提交的跨数据节点IUD语句&#xa;&#xa;&#xa;HotDB自动开启XA事务并对多个数据节点执行完事务相关SQL后,进行XA END;XA PREPARE&#xa;&#xa;&#xa;HotDB收到所有数据节点的PREPAE OK后记录XA log&#xa;&#xa;&#xa;MySQL 回复COMMIT OK&#xa;&#xa;&#xa;HotDB等待所有数据节点回复结束后，回复客户端OK&#xa;&#xa;&#xa;客户端收到OK" style="text;whiteSpace=wrap;html=1;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="3360" y="35" width="520" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-208" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1" source="JKw2uaOTa6GlGYW2WIKC-206" target="JKw2uaOTa6GlGYW2WIKC-207">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-206" value="&lt;span style=&quot;text-align: left;&quot;&gt;客户端发出COMMIT或者自动提交的跨数据节点IUD语句&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=9;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2700" y="90" width="270" height="80" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-208" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1" target="JKw2uaOTa6GlGYW2WIKC-207">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2835" y="170" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="JKw2uaOTa6GlGYW2WIKC-210" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1" source="JKw2uaOTa6GlGYW2WIKC-207" target="JKw2uaOTa6GlGYW2WIKC-209">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-207" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB自动开启XA事务并对多个数据节点执行完事务相关SQL后,进行XA END;XA PREPARE&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2650" y="240" width="370" height="60" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-207" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB自动开启XA事务并对多个数据节点执行完事务相关SQL后,进行XA END;XA PREPARE&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="215" width="370" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JKw2uaOTa6GlGYW2WIKC-212" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1" source="JKw2uaOTa6GlGYW2WIKC-209" target="JKw2uaOTa6GlGYW2WIKC-211">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-209" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB收到所有数据节点的PREPAE OK后记录XA log&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2650" y="365" width="370" height="50" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-209" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB收到所有数据节点的PREPAE OK后记录XA log&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="321" width="370" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-214" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1" source="JKw2uaOTa6GlGYW2WIKC-211" target="JKw2uaOTa6GlGYW2WIKC-213">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-214" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2835" y="446" as="sourcePoint" />
+            <mxPoint x="2835" y="510" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-211" value="&lt;span style=&quot;text-align: left;&quot;&gt;MySQL 回复COMMIT OK&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2650" y="490" width="370" height="45" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-211" value="&lt;span style=&quot;text-align: left;&quot;&gt;MySQL 回复COMMIT OK&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="416" width="370" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="JKw2uaOTa6GlGYW2WIKC-213" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB等待所有数据节点回复结束后，回复客户端OK&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2650" y="607.5" width="370" height="47.5" as="geometry" />
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-217" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JKw2uaOTa6GlGYW2WIKC-213" target="JKw2uaOTa6GlGYW2WIKC-219">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2835" y="767" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-213" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB等待所有数据节点回复结束后，回复客户端OK&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="602.5" width="370" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-215" value="&lt;span style=&quot;text-align: left;&quot;&gt;客户端发出COMMIT或者自动提交的跨数据节点IUD语句&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="120" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-219" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;客户端收到ok&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="694" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-220" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2800" y="190" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-221" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2800" y="289" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-222" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2801" y="384" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-223" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2800" y="473" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-224" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2801" y="570" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-227" value="&lt;span style=&quot;text-align: left;&quot;&gt;HotDB等待所有数据节点回复结束后，回复客户端OK&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=9;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="505.75" width="370" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-229" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=9;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2838" y="556" as="sourcePoint" />
+            <mxPoint x="2838" y="600.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-231" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2801" y="662" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-232" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="180" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-233" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="284" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-234" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="378" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-235" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="468" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-237" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="560" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JKw2uaOTa6GlGYW2WIKC-238" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png;fontSize=9;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="652" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
